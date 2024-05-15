@@ -22,7 +22,7 @@ const CompletedTask = () => {
             <StatusBar/>
             <NavBar previousIcon={true} dateIcon={false} />
 
-            <div className="w-full h-full">
+            <div className="w-full h-full overflow-auto">
                 {
                     completed?.map(task => <TodoCard key={task.id} task={task} button = {false}/>)
                 }
